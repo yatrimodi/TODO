@@ -1,8 +1,18 @@
-# React + Vite
+# ToDo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Task Management web application that lets a user create, view, update, and delete to‑do items.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Overview
+
+This Node.js + Express app provides a clean, RESTful interface for managing tasks. It implements all the core use cases:
+
+- **Add Task**: Create a new to‑do item with a title, description, and due date.  
+- **View Tasks**: Retrieve the full list of tasks, plus filter by “completed” or “pending.”  
+- **Update Task**: Modify the details of an existing task (title, description, due date).  
+- **Mark Complete**: Toggle a task’s completion status.  
+- **Delete Task**: Remove a task permanently.
+
+
+---
