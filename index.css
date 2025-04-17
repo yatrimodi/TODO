@@ -1,0 +1,331 @@
+/* 🌍 Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 🎨 Background Gradient */
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Purple to Blue */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+}
+
+/* ✨ Glassmorphism Effect */
+.container,
+.auth-container{
+  width: 120%;
+  max-width: 400px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  
+}
+
+.dashboard-container {
+  width: 100%;
+  max-width: 400%;
+  padding: 30px;
+  /*background: rgba(255, 255, 255, 0.1);*/
+  backdrop-filter: blur(25px);
+  border-radius: 15px;
+  /*box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);*/
+  text-align: center;
+  
+}
+/* 🔐 Login & Signup Forms */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  outline: none;
+  font-size: 16px;
+  color: white;
+}
+
+.input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.input-group .icon {
+  position: absolute;
+  left: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+/* 👁️ Show/Hide Password */
+.show-password {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+
+/* 🟦 Primary Button */
+.auth-button, .primary-btn {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.auth-button:hover, .primary-btn:hover {
+  background: #0056b3;
+}
+/*signup and login link button*/
+.link-button {
+  width: 50%;
+  background: #6600ff;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+/* 🟨 Secondary Button */
+.secondary-btn {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* 🌑 Dark Mode */
+.dark-mode {
+  background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+}
+
+.dark-mode .container, .dark-mode .auth-container {
+  background: rgba(40, 40, 40, 0.8);
+  color: white;
+}
+
+/* 📌 Dashboard UI */
+.todo-app {
+  max-width: 500px;
+  padding: 20px;
+  text-align: center;
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-form input, .task-form select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.task-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+/* 🔥 Priority Styles */
+.priority-high {
+  border-left: 5px solid red;
+}
+
+.priority-medium {
+  border-left: 5px solid orange;
+}
+
+.priority-low {
+  border-left: 5px solid green;
+}
+
+/* 📅 Sorting Buttons */
+.sort-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.sort-options button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sort-options button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* ✅ Continue Button */
+.continue-btn {
+  width: 100%;
+  background: #00c853;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.continue-btn:hover {
+  background: #740a9f;
+}
+
+/* ❌ Delete Button */
+.delete-btn {
+  background: #ff1744;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #d50000;
+}
+
+/* ✏️ Edit Button */
+button.edit-btn {
+  background: #ff9800;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button.edit-btn:hover {
+  background: #e65100;
+}
+
+/* 🔄 Toggle Dark Mode */
+.toggle-mode {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-mode:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* 🎯 No Task Message */
+.no-task {
+  text-align: center;
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+
+/* 🌌 Welcome Page Styling */
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+  transition: opacity 0.8s ease-out;
+}
+
+.welcome-container h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.welcome-container p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* 🌀 Fade Out Effect */
+.fade-out {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
